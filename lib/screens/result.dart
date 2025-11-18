@@ -1,10 +1,13 @@
 /*
  * Program Title: SariwAI Mobile Application
- * Programmers: [Your Name/Team Name Here]
+ * Programmers: Abesamis, John Gabriel R.
+ *              David, Abdurasheed A.
+ *              Golosinda, Pamela T.
+ *              Supnet, Kieferson Carl G.
  * Where the program fits: Frontend - This file defines the screen that displays the final
  *                         analysis results to the user.
- * Date written: 2025-11-14
- * Date revised: 2025-11-14
+ * Date written: 2025-06-20
+ * Date revised: 2025-10-10
  * Purpose: This screen takes the analysis data from the backend (via the ImagePreviewScreen)
  *          and presents it in a clear, user-friendly format. It uses color-coding
  *          and conditional UI elements to show the freshness status, detailed
