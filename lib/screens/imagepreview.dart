@@ -1,10 +1,13 @@
 /*
  * Program Title: SariwAI Mobile Application
- * Programmers: [Your Name/Team Name Here]
+ * Programmers: Abesamis, John Gabriel R.
+ *              David, Abdurasheed A.
+ *              Golosinda, Pamela T.
+ *              Supnet, Kieferson Carl G.
  * Where the program fits: Frontend - This file defines the screen that displays a selected
  *                         image and allows the user to send it to the backend for analysis.
- * Date written: 2025-11-14
- * Date revised: 2025-11-14
+ * Date written: 2025-06-20
+ * Date revised: 2025-10-10
  * Purpose: This screen acts as a confirmation step after a user selects an image.
  *          It shows a full-screen preview of the image and provides an "Analyze Image"
  *          button. When pressed, it handles the HTTP multipart request to the backend API,
