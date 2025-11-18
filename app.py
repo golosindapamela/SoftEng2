@@ -1,11 +1,14 @@
 """
 Program Title: Tilapia Freshness Detection API
-Programmers: [Kieferson Carl Supnet]
+Programmers: Abesamis, John Gabriel R.
+             David, Abdurasheed A.
+             Golosinda, Pamela T.
+             Supnet, Kieferson Carl G.
 Where the program fits: This is the backend server for the mobile application. It exposes
                         a single API endpoint to analyze images of tilapia and determine
                         their freshness based on an object detection model.
-Date written: 2025-11-14
-Date revised: 2025-11-14
+Date written: 2025-06-20
+Date revised: 2025-10-10
 Purpose: This script launches a Flask web server that loads a pre-trained
          transformer model from Hugging Face. It provides a '/predict'
          endpoint that accepts an image file, performs object detection
@@ -116,7 +119,7 @@ def predict():
                 best_eye['score'] = score.item()
                 best_eye['status'] = label.rsplit('_', 1)[0] # Extracts status like "fresh" from "fresh_eye"
             elif 'gill' in label_lower and score > best_gill['score']:
-                best_gill['score'] = score.item()
+                best_gill['score'] = score.item()https://github.com/Kuiper-sun/SoftEng2/tree/backend
                 best_gill['status'] = label.rsplit('_', 1)[0]
 
         # 5. Determine final status and construct the response
