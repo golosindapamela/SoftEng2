@@ -1,10 +1,13 @@
 /*
  * Program Title: SariwAI Mobile Application
- * Programmers: [Your Name/Team Name Here]
+ * Programmers: Abesamis, John Gabriel R.
+ *              David, Abdurasheed A.
+ *              Golosinda, Pamela T.
+ *              Supnet, Kieferson Carl G.
  * Where the program fits: Frontend - This is the initial screen that users see when they
  *                         first open the application.
- * Date written: 2025-11-14
- * Date revised: 2025-11-14
+ * Date written: 2025-06-20
+ * Date revised: 2025-10-10
  * Purpose: This screen serves as the landing page, welcoming the user and providing a
  *          brief introduction to the app's purpose. It features entry animations and
  *          clear navigation paths to the "How It Works" screen and the main camera feature.
