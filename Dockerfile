@@ -1,9 +1,34 @@
-#
-# Dockerfile for the Tilapia Freshness Detection API
-#
-# This file describes the steps to build a Docker container image for the backend application.
-# It uses a multi-stage build to create a lean, secure, and efficient final image.
-#
+############################################################################################
+#  Program Title: Dockerfile – Tilapia Freshness Detection API
+# ------------------------------------------------------------------------------------------
+#  Programmers: Abesamis, John Gabriel R.
+#               David, Abdurasheed A.
+#               Golosinda, Pamela T.
+#               Supnet, Kieferson Carl G.
+# ------------------------------------------------------------------------------------------
+#  Where the program fits: This Dockerfile defines the containerized environment for the
+#                          backend API that performs tilapia freshness detection using a
+#                          transformer-based object detection model.
+# ------------------------------------------------------------------------------------------
+#  Date written: 2025-06-20
+#  Date revised: 2025-10-10
+# ------------------------------------------------------------------------------------------
+#  Purpose: This file describes the steps required to build a secure, efficient, and
+#           production-ready Docker image for the Flask-based backend server. It uses
+#           a multi-stage build to reduce final image size, improve performance, and
+#           ensure clean dependency separation.
+# ------------------------------------------------------------------------------------------
+#  Data structures, algorithms, and control:
+#           - Data Structures: Docker layers and build stages organize dependencies and
+#                             application code. Environment variables store configuration.
+#           - Algorithms: Implements a multi-stage build process—first building a virtual
+#                         environment in a 'builder' stage, then copying only necessary
+#                         components into a minimal final image.
+#           - Control Flow: The build process sequentially installs dependencies, copies
+#                          source code, sets up a non-root user, configures environment
+#                          variables, exposes the API port, and defines the Gunicorn
+#                          command executed when the container starts.
+############################################################################################
 
 # --- Stage 1: Builder ---
 # In this stage, we install all dependencies, including any that are only
